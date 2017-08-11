@@ -5,4 +5,4 @@ console.log('Loaded!');
 
 var element = document.getElementByid('main-text');
 
-elemrnt.InnerHTML = 'New Value';
+element.InnerHTML = 'New Value';
