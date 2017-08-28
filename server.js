@@ -98,10 +98,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
+var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
   // make a select request
   // return a response with a results
+  pool.query('SELECT * FROM test',function (err, result) {
+      
+  });
 });
 
 
