@@ -118,7 +118,7 @@ app.get('/counter', function (req, res) {
     res.send(counter.toString());
 });    
 
-app.get('articles/:articleName', function (req, res) {
+app.get('/articles/:articleName', function (req, res) {
     // articleName == article-one
     // articles[articleName] == {} content object for article one
   pool.query("SELECT * FROM WHERE title = '" +req.parana.articleName +"'", function (err,result) {
